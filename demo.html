@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Sition插件演示</title>
+	<meta name="keywords" content="Sition插件演示"/>	
+    <meta name="description" content="Sition插件演示"/>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <script src="src/sition.js?v=0.1" type="text/javascript" ></script>
+	<style>
+	body{
+	   max-width:800px;
+	   max-height:800px;
+	   margin:10px;
+	}
+	#demo{
+	   margin-top:80px;
+	   max-width:500px;
+	   height:500px;
+	   background-color:#000;
+	}
+    </style>
+  </head>
+ <body>
+    <div id="demo"></div>
+ </body>
+<script>
+Sition('demo','leftUp',function(ev){
+	console.log(ev);
+	alert('向左滑动-顶部')
+});
+
+Sition('demo','rightUp',function(ev){
+	console.log(ev);
+    alert('向右滑动-顶部')
+});
+
+Sition('demo','leftDown',function(ev){
+	console.log(ev);
+	alert('向左滑动-底部')
+});
+
+Sition('demo','rightDown',function(ev){
+	console.log(ev);
+    alert('向右滑动-底部')
+});
+
+Sition('demo','upLeft',function(ev){
+	console.log(ev);
+	alert('向上滑动-左边')
+});
+
+Sition('demo','downLeft',function(ev){
+    console.log(ev);
+    alert('向下滑动-左边')
+});
+
+Sition('demo','upRight',function(ev){
+	console.log(ev);
+	alert('向上滑动-右边')
+});
+
+Sition('demo','downRight',function(ev){
+   console.log(ev);
+   alert('向下滑动-右边')
+});
+
+Sition('demo','rightCenter',function(ev){
+   console.log(ev);
+   alert('向右滑动-居中')
+});
+
+Sition('demo','leftCenter',function(ev){
+
+   console.log(ev);
+   alert('向左滑动-居中')
+});
+
+Sition('demo','upCenter',function(ev){
+   console.log(ev);
+   alert('向上滑动-居中')
+});
+
+Sition('demo','downCenter',function(ev){
+   console.log(ev);
+   alert('向下滑动-居中')
+});
+
+
+Sition('demo','down',function(ev){
+   console.log(ev);
+   alert('向下滑动')
+});
+
+Sition('demo','up',function(ev){
+   console.log(ev);
+   alert('向上滑动')
+});
+
+Sition('demo','left',function(ev){
+   console.log(ev);
+   alert('向左滑动')
+});
+
+Sition('demo','right',function(ev){
+   console.log(ev);
+   alert('向右滑动')
+});
+
+Sition('demo','long',function(){
+   alert('长按操作')
+});
+
+Sition('demo','clicked',function(){
+   alert('双击操作')
+});
+</script>
+</html>
