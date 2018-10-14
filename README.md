@@ -1,37 +1,51 @@
-# Sition
+**js原生触屏位置操作插件--Sition** 
 
-#### 项目介绍
-轻量级JS原生触屏位置操作插件--Sition，支持移动端上下左右中的滑动判断，还有长按，以及双击事件。
+- 一款轻量级的移动触屏手势操作js插件,使用简单方便,支持多种判断操作
 
-#### 软件架构
-软件架构说明
-
-
-#### 安装教程
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 使用说明
-
-1. xxxx
-2. xxxx
-3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
+**如何使用：** 
+- ` Sition(dom,action,function,debug) `
 
 
-#### 码云特技
+**参数：** 
 
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [https://gitee.com/help](https://gitee.com/help)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
+|参数名|必选|类型|说明|
+|:----    |:---|:----- |-----   |
+| dom | 否  |string | 元素id名,为空代表整个body页面   |
+| action  | 是  |string | 要执行的动作名称   |
+| function | 是  |function | 执行后的回调函数   |
+| debug | 否  | bool | 开启调试，true为开启   |
+
+**action 动作参数说明：** 
+
+|参数名|说明|
+|:-----  |:-----|-----   
+| long | 长按操作 |
+| clicked | 双击操作 |
+| up | 向上滑动 |
+| upLeft | 向上滑动-左边 |
+| upRight | 向上滑动-右边 |
+| down | 向下滑动 |
+| downLeft | 向下滑动-左边 |
+| downRight | 向下滑动-右边 |
+| left | 向左滑动 |
+| leftUp | 向左滑动-顶部 |
+| leftDown | 向左滑动-底部 |
+| right | 向右滑动 |
+| rightUp | 向右滑动-顶部 |
+| rightDown | 向右滑动-底部 |
+| upCenter | 向上滑动-居中 |
+| downCenter | 向下滑动-居中 |
+| leftCenter | 向左滑动-居中 |
+| rightCenter | 向右滑动-居中 |
+
+**注意事项** 
+ 
+- 要确保dom有高度和宽度，不然无法判断，默认读取的是body元素，body元素也要有高度和宽度
+
+**前端调试**
+- 可以使用谷歌浏览器自带的移动端模拟功能在电脑上调试
+
+ ![](https://www.showdoc.cc/server/api/common/visitfile/sign/2a419bd9617cb07925d3867055df781a?showdoc=.jpg)
+
+**作者备注**
+- 如果发现问题，欢迎向我反馈，毕竟一个人测试有限，会有注意不到的地方。
