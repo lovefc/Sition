@@ -3,6 +3,7 @@
 - 一款轻量级的移动触屏手势操作js插件,使用简单方便,支持多种判断操作
 - https://uquhu.cn 一款利用该插件打造的移动端手势音乐播放器（有点炫酷）
 - https://gitee.com/lovefc/fmusic 移动端手势音乐播放器项目地址
+- 在线演示：https://uquhu.cn/sition
 
 **如何使用：** 
 - ` Sition(dom,action,function,debug) `
