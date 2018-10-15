@@ -40,6 +40,13 @@
 | downCenter | 向下滑动-居中 |
 | leftCenter | 向左滑动-居中 |
 | rightCenter | 向右滑动-居中 |
+| 方向+Ing | 表示滑动的整个过程 |
+
+**关于正在滑动（方向+Ing）** 
+
+- 举例： ` Sition(dom,'upIng',function(){console.log(11);}) `
+
+在方向后面加上Ing，表示的都是整个向下滑动过程中，函数会一直执行下去，直到你的手指离开了屏幕
 
 **注意事项** 
  
